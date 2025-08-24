@@ -5,9 +5,13 @@ Generated with Template by:
 Copyright (c) 2025 pgRouting developers
 Mail: project@pgrouting.org
 
-Developer:
+Developers:
+
 Copyright (c) 2025 Bipasha Gayary
 Mail: bipashagayary at gmail.com
+
+Copyright (c) 2025 Fan Wu
+Mail: wifiblack0131 at gmail.com
 
 ------
 
@@ -38,7 +42,6 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 void
 do_ordering(
         std::string, int,
-
         int64_t**,  size_t*,
         char **, char **, char **);
 

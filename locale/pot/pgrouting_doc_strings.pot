@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pgRouting v4.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-21 16:48+0000\n"
+"POT-Creation-Date: 2025-08-23 02:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3076,13 +3076,16 @@ msgstr ""
 msgid ":doc:`pgr_topologicalSort` - Linear ordering of the vertices for directed acyclic graph."
 msgstr ""
 
-msgid ":doc:`pgr_sloanOrdering` - Returns the sloan ordering of an undirected graph."
+msgid ":doc:`pgr_kingOrdering` - Returns the King ordering of an undirected graphs acyclic graph."
 msgstr ""
 
 msgid ":doc:`metrics-family`"
 msgstr ""
 
 msgid ":doc:`pgr_betweennessCentrality` - Calculates relative betweenness centrality using Brandes Algorithm"
+msgstr ""
+
+msgid ":doc:`pgr_bandwidth` - Computes the bandwidth of a graph."
 msgstr ""
 
 msgid ":doc:`TRSP-family`"
@@ -3592,6 +3595,12 @@ msgstr ""
 msgid "pgr_aStarCost"
 msgstr ""
 
+msgid "pgr_bandwidth"
+msgstr ""
+
+msgid "New experimental function."
+msgstr ""
+
 msgid "pgr_bdAstar"
 msgstr ""
 
@@ -3668,6 +3677,21 @@ msgid "pgr_edmondsKarp"
 msgstr ""
 
 msgid "pgr_edwardMoore"
+msgstr ""
+
+msgid "Version 3.2.0"
+msgstr ""
+
+msgid "New experimental signature:"
+msgstr ""
+
+msgid "pgr_edwardMoore(Combinations)"
+msgstr ""
+
+msgid "Version 3.0.0"
+msgstr ""
+
+msgid "pgr_kingOrdering"
 msgstr ""
 
 msgid "pgr_KSP"
@@ -3896,6 +3920,21 @@ msgid "`#2718 <https://github.com/pgRouting/pgrouting/issues/2718>`__: pgr_maxFl
 msgstr ""
 
 msgid "`#2718 <https://github.com/pgRouting/pgrouting/issues/2718>`__: pgr_pushRelabel(Combinations)"
+msgstr ""
+
+msgid "New experimental functions"
+msgstr ""
+
+msgid "Metrics"
+msgstr ""
+
+msgid "`#2951 <https://github.com/pgRouting/pgrouting/issues/2951>`__: pgr_bandwidth"
+msgstr ""
+
+msgid "Ordering"
+msgstr ""
+
+msgid "`#2954 <https://github.com/pgRouting/pgrouting/issues/2954>`__: pgr_kingOrdering"
 msgstr ""
 
 msgid "SQL signatures and output standardization"
@@ -7036,10 +7075,10 @@ msgstr ""
 msgid "This Release Contributors"
 msgstr ""
 
-msgid "Individuals in this release v3.8.x (in alphabetical order)"
+msgid "Individuals in this release v4.0.0 (in alphabetical order)"
 msgstr ""
 
-msgid "Aurélie Bousquet, Regina Obe, Vicky Vergara"
+msgid "Fan Wu Regina Obe, Saloni kumari, Vicky Vergara"
 msgstr ""
 
 msgid "And all the people that give us a little of their time making comments, finding issues, making pull requests etc. in any of our products: osm2pgrouting, pgRouting, pgRoutingLayer, workshop."
@@ -7078,7 +7117,7 @@ msgstr ""
 msgid "Individuals (in alphabetical order)"
 msgstr ""
 
-msgid "Aasheesh Tiwari, Abhinav Jain, Aditya Pratap Singh, Adrien Berchet, Akio Takubo, Andrea Nardelli, Anthony Tasca, Anton Patrushev, Aryan Gupta, Ashraf Hossain, Ashish Kumar, Aurélie Bousquet, Bipasha Gayary, Cayetano Benavent, Christian Gonzalez, Daniel Kastl, Dapeng Wang, Dave Potts, David Techer, Denis Rykov, Ema Miyawaki, Esteban Zimanyi, Florian Thurkow, Frederic Junod, Gerald Fenoy, Gudesa Venkata Sai Akhil, Hang Wu, Himanshu Raj, Imre Samu, Jay Mahadeokar, Jinfu Leng, Kai Behncke, Kishore Kumar, Ko Nagase, Mahmoud Sakr, Manikata Kondeti, Mario Basa, Martin Wiesenhaan, Maxim Dubinin, Maoguang Wang, Mohamed Bakli, Mohamed Zia, Mukul Priya, Nitish Chauhan, Rajat Shinde, Razequl Islam, Regina Obe, Rohith Reddy, Sarthak Agarwal, Shobhit Chaurasia, Sourabh Garg, Stephen Woodbridge, Swapnil Joshi, Sylvain Housseman, Sylvain Pasche, Veenit Kumar, Vidhan Jain, Virginia Vergara, Yige Huang"
+msgid "Aasheesh Tiwari, Abhinav Jain, Aditya Pratap Singh, Adrien Berchet, Akio Takubo, Andrea Nardelli, Anthony Tasca, Anton Patrushev, Aryan Gupta, Ashraf Hossain, Ashish Kumar, Aurélie Bousquet, Cayetano Benavent, Christian Gonzalez, Daniel Kastl, Dapeng Wang, Dave Potts, David Techer, Denis Rykov, Ema Miyawaki, Esteban Zimanyi, Fan Wu, Florian Thurkow, Frederic Junod, Gerald Fenoy, Gudesa Venkata Sai Akhil, Hang Wu, Himanshu Raj, Imre Samu, Jay Mahadeokar, Jinfu Leng, Kai Behncke, Kishore Kumar, Ko Nagase, Mahmoud Sakr, Manikata Kondeti, Mario Basa, Martin Wiesenhaan, Maxim Dubinin, Maoguang Wang, Mohamed Bakli, Mohamed Zia, Mukul Priya, Nitish Chauhan, Rajat Shinde, Razequl Islam, Regina Obe, Rohith Reddy, Saloni Kumari, Sarthak Agarwal, Shobhit Chaurasia, Sourabh Garg, Stephen Woodbridge, Swapnil Joshi, Sylvain Housseman, Sylvain Pasche, Veenit Kumar, Vidhan Jain, Virginia Vergara, Yige Huang"
 msgstr ""
 
 msgid "Corporate Sponsors (in alphabetical order)"
@@ -7504,9 +7543,6 @@ msgstr ""
 msgid "Using `Boost: metric TSP approx <https://www.boost.org/libs/graph/doc/metric_tsp_approx.html>`__"
 msgstr ""
 
-msgid "Version 3.0.0"
-msgstr ""
-
 msgid "Name change from pgr_eucledianTSP"
 msgstr ""
 
@@ -7592,9 +7628,6 @@ msgid "pgr_aStar(One to Many) added ``end_vid`` column."
 msgstr ""
 
 msgid "pgr_aStar(Many to One) added ``start_vid`` column."
-msgstr ""
-
-msgid "Version 3.2.0"
 msgstr ""
 
 msgid "New proposed signature:"
@@ -7783,9 +7816,6 @@ msgstr ""
 msgid "Version 2.5.0"
 msgstr ""
 
-msgid "New experimental function."
-msgstr ""
-
 msgid "Those vertices that belong to more than one biconnected component are called articulation points or, equivalently, cut vertices. Articulation points are vertices whose removal would increase the number of connected components in the graph. This implementation can only be used with an undirected graph."
 msgstr ""
 
@@ -7817,6 +7847,54 @@ msgid "`Boost: Biconnected components & articulation points <https://www.boost.o
 msgstr ""
 
 msgid "wikipedia: `Biconnected component <https://en.wikipedia.org/wiki/Biconnected_component>`__"
+msgstr ""
+
+msgid "``pgr_bandwidth`` - Experimental"
+msgstr ""
+
+msgid "``pgr_bandwidth`` - Calculates the bandwidth of the graph"
+msgstr ""
+
+msgid "Bandwidth measures how \"spread out\" the connections are in a graph when vertices are arranged in a linear order (like numbering them 1, 2, 3, etc.)."
+msgstr ""
+
+msgid "For each edge in the graph, calculate the distance between the vertex numbers it connects"
+msgstr ""
+
+msgid "The bandwidth is the maximum of all these distances"
+msgstr ""
+
+msgid "The implementation is for undirected graphs"
+msgstr ""
+
+msgid "Run time is 0.160789 seconds"
+msgstr ""
+
+msgid "pgr_bandwidth(`Edges SQL`_)"
+msgstr ""
+
+msgid "Returns ``BIGINT``"
+msgstr ""
+
+msgid "For an undirected graph with edges."
+msgstr ""
+
+msgid "Returns a bigint ``(pgr_bandwidth)``"
+msgstr ""
+
+msgid "``pgr_bandwidth``"
+msgstr ""
+
+msgid "gives the bandwidth of the graph."
+msgstr ""
+
+msgid "Undirected graph with edges before optimization."
+msgstr ""
+
+msgid "Undirected graph with edges after optimization."
+msgstr ""
+
+msgid "`Boost: bandwidth <https://www.boost.org/libs/graph/doc/bandwidth.html>`_"
 msgstr ""
 
 msgid "``pgr_bdAstar``"
@@ -8009,9 +8087,6 @@ msgid "``pgr_bellmanFord - Experimental``"
 msgstr ""
 
 msgid "``pgr_bellmanFord`` — Shortest path using Bellman-Ford algorithm."
-msgstr ""
-
-msgid "New experimental signature:"
 msgstr ""
 
 msgid "pgr_bellmanFord(Combinations)"
@@ -9016,7 +9091,7 @@ msgstr ""
 msgid "``pgr_contractionHierarchies`` — Performs graph contraction according to the contraction hierarchies method and returns the contracted vertices and shortcut edges created."
 msgstr ""
 
-msgid "New **experimental** function"
+msgid "New experimental function"
 msgstr ""
 
 msgid "The contraction hierarchies method builds, from an initial order of the vertices, a hierarchical order, giving priority to some vertices during the processing of label fixing of shortest paths algorithms. Furthermore, the contraction hierarchies algorithm adds shortcut edges in the graph, that helps the shortest paths algorithm to follow the created hierarchical graph structure."
@@ -10516,9 +10591,6 @@ msgstr ""
 msgid "``pgr_edwardMoore`` — Returns the shortest path using Edward-Moore algorithm."
 msgstr ""
 
-msgid "pgr_edwardMoore(Combinations)"
-msgstr ""
-
 msgid "Edward Moore’s Algorithm is an improvement of the Bellman-Ford Algorithm. It can compute the shortest paths from a single source vertex to all other vertices in a weighted directed graph. The main difference between Edward Moore's Algorithm and Bellman Ford's Algorithm lies in the run time."
 msgstr ""
 
@@ -11116,7 +11188,7 @@ msgstr ""
 msgid "``pgr_johnson``"
 msgstr ""
 
-msgid "``pgr_johnson`` - Returns the sum of the costs of the shortest path for each pair of nodes in the graph using Floyd-Warshall algorithm."
+msgid "``pgr_johnson`` - Returns the sum of the costs of the shortest path for each pair of nodes in the graph using Johnson algorithm."
 msgstr ""
 
 msgid "The Johnson algorithm, is a good choice to calculate the sum of the costs of the shortest path for each pair of nodes in the graph, for *sparse graphs*. It uses the Boost's implementation which runs in :math:`O(V E \\log V)` time,"
@@ -11126,6 +11198,39 @@ msgid "pgr johnson(`Edges SQL`_, [``directed``])"
 msgstr ""
 
 msgid "Boost `Johnson <https://www.boost.org/libs/graph/doc/johnson_all_pairs_shortest.html>`_"
+msgstr ""
+
+msgid "``pgr_kingOrdering`` - Experimental"
+msgstr ""
+
+msgid "``pgr_kingOrdering`` — Returns the King ordering of an undirected graphs"
+msgstr ""
+
+msgid "In numerical linear algebra and graph theory, the King ordering algorithm is a heuristic designed to reorder the vertices of a graph so as to reduce its bandwidth."
+msgstr ""
+
+msgid "The method follows a breadth-first search (BFS) traversal,but with a refinement: at each step, the unvisited neighbors of the current vertex are inserted into the queue in ascending order of their pseudo-degree, where the pseudo-degree of a vertex is the number of edges connecting it to yet-unvisited vertices. This prioritization often yields a smaller bandwidth compared to simpler BFS orderings."
+msgstr ""
+
+msgid "The implementation targets undirected graphs."
+msgstr ""
+
+msgid "Bandwidth minimization is an NP-complete problem; King ordering provides a practical local minimization approach."
+msgstr ""
+
+msgid "The time complexity is: :math:`O(m^2 \\log(m)|E|)`"
+msgstr ""
+
+msgid "where :math:`|E|` is the number of edges,"
+msgstr ""
+
+msgid ":math:`m` is the maximum degree among all vertices."
+msgstr ""
+
+msgid "pgr_kingOrdering(`Edges SQL`_)"
+msgstr ""
+
+msgid "`Boost: King Ordering <https://www.boost.org/libs/graph/doc/king_ordering.html>`__"
 msgstr ""
 
 msgid "``pgr_kruskal``"
@@ -12239,66 +12344,6 @@ msgid "pgr_sequentialVertexColoring(`Edges SQL`_)"
 msgstr ""
 
 msgid "`Boost: Sequential Vertex Coloring <https://www.boost.org/libs/graph/doc/sequential_vertex_coloring.html>`__"
-msgstr ""
-
-msgid "``pgr_sloanOrdering`` - Experimental"
-msgstr ""
-
-msgid "``pgr_sloanOrdering`` — Returns the sloan ordering of an undirected graph"
-msgstr ""
-
-msgid "The Sloan ordering algorithm reorders the vertices of a graph to reduce bandwidth, profile, and wavefront properties, which is particularly useful for sparse matrix computations and finite element analysis."
-msgstr ""
-
-msgid "*Finds a pseudoperipheral vertex pair to determine good starting points *Uses a priority-based algorithm that balances vertex degree and distance from the start vertex. *Aims to mininimize bandwidth (maximum difference between connected vertex indices. *The implementation is for undirected graphs *Typically produces better orderings than simple breadth-first approaches. *Run time is 0.115846 seconds."
-msgstr ""
-
-msgid "|Boost| Boost Graph inside"
-msgstr ""
-
-msgid "..rubric::Summary"
-msgstr ""
-
-msgid "pgr_sloanOrdering(`Edges SQL`_)"
-msgstr ""
-
-msgid ":Example : Sloan ordering without specifying start vertex"
-msgstr ""
-
-msgid "New sloan ordering order."
-msgstr ""
-
-msgid "Sloan ordering of Original graph from Boost example (vertices 0-9)."
-msgstr ""
-
-msgid "..graphviz::"
-msgstr ""
-
-msgid "graph G{ node[shape=circle, style=filled, fillcolor=lightblue, color=black, fontcolor=black, fontsize=12]; edge[color=black, penwidth=1.5];"
-msgstr ""
-
-msgid "0 -- 3; 0 -- 5; 1 -- 2; 1 -- 4; 1 -- 6; 1 -- 9; 2 -- 3; 2 -- 4; 3 -- 5; 3 -- 8; 4 -- 6; 5 -- 6; 5 -- 7; 6 -- 7;"
-msgstr ""
-
-msgid "{rank=same; 0; 8;} {rank=same; 3; 5; 7;} {rank=same; 2; 4; 6;} {rank=same; 1; 9;}"
-msgstr ""
-
-msgid "}"
-msgstr ""
-
-msgid "..literalinclude::sloanOrdering.queries"
-msgstr ""
-
-msgid "start-after"
-msgstr ""
-
-msgid "--q3"
-msgstr ""
-
-msgid "--q4"
-msgstr ""
-
-msgid "`Boost: Sloan Ordering <https://www.boost.org/libs/graph/doc/sloan_ordering.html>`__"
 msgstr ""
 
 msgid "``pgr_stoerWagner`` - Experimental"
@@ -13516,12 +13561,6 @@ msgstr ""
 msgid "CI does not test for PostgreSQL 12"
 msgstr ""
 
-msgid "New experimental functions"
-msgstr ""
-
-msgid "Metrics"
-msgstr ""
-
 msgid "pgr_betweennessCentrality"
 msgstr ""
 
@@ -13844,9 +13883,6 @@ msgid "pgr_findCloseEdges(One point)"
 msgstr ""
 
 msgid "pgr_findCloseEdges(Many points)"
-msgstr ""
-
-msgid "Ordering"
 msgstr ""
 
 msgid "pgr_cuthillMckeeOrdering"
@@ -15613,13 +15649,13 @@ msgstr ""
 msgid "It is recommended to use the following wrapper on the problem to pin point the step that is causing the problem."
 msgstr ""
 
-msgid "Mailing List and GIS StackExchange"
+msgid "Mailing List, Matrix, GIS StackExchange"
 msgstr ""
 
-msgid "There are two mailing lists for pgRouting hosted on OSGeo mailing list server:"
+msgid "There are two mailing lists for pgRouting hosted on OSGeo discourse server:"
 msgstr ""
 
-msgid "User mailing list: https://lists.osgeo.org/mailman/listinfo/pgrouting-users"
+msgid "User mailing list: https://discourse.osgeo.org/c/pgrouting/pgrouting-users/"
 msgstr ""
 
 msgid "Developer mailing list: https://discourse.osgeo.org/c/pgrouting/pgrouting-dev/"
@@ -15629,6 +15665,9 @@ msgid "Subscribe: https://discourse.osgeo.org/g/pgrouting-dev"
 msgstr ""
 
 msgid "For general questions and topics about how to use pgRouting, please write to the user mailing list."
+msgstr ""
+
+msgid "If you want to chat with fellow pgRouting users and contributors, you can join our matrix channel: `pgRouting matrix channel <https://matrix.to/#/#pgrouting:osgeo.org>`_."
 msgstr ""
 
 msgid "You can also ask at `GIS StackExchange <https://gis.stackexchange.com/>`_ and tag the question with ``pgrouting``. Find all questions tagged with ``pgrouting`` under https://gis.stackexchange.com/questions/tagged/pgrouting or subscribe to the `pgRouting questions feed <https://gis.stackexchange.com/feeds/tag?tagnames=pgrouting&sort=newest>`_."

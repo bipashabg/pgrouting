@@ -4,9 +4,10 @@ File: ordering_process.cpp
 Copyright (c) 2025 pgRouting developers
 Mail: project@pgrouting.org
 
-Developer:
+Developers:
 Copyright (c) 2025 pgRouting developers
 Mail: bipashagayary at gmail.com
+Mail: wifiblack0131 at gmail.com
 
 ------
 
@@ -41,7 +42,8 @@ extern "C" {
 
 /**
  which = 0 -> sloan
- 
+ which = 1 -> cuthillmckee
+ which = 2 -> king
 
  This is c++ code, linked as C code, because pgr_process_foo is called from C code
  */
@@ -60,14 +62,18 @@ void pgr_process_ordering(
 
     clock_t start_t = clock();
     do_ordering(
-            edges_sql,
+            std::string(edges_sql),
             which,
             result_tuples, result_count,
             &log_msg , &notice_msg, &err_msg);
+    
     if (which == 0) {
-            time_msg(std::string(" processing pgr_sloanOrdering").c_str(), start_t, clock());
+        time_msg(std::string(" processing pgr_sloanOrdering").c_str(), start_t, clock());
+    } else if (which == 1) {
+        time_msg(std::string("processing pgr_cuthillMckeeOrdering").c_str(), start_t, clock());
+    } else if (which == 2) {
+        time_msg(std::string("processing pgr_kingOrdering").c_str(), start_t, clock());
     }
-
 
     if (err_msg && (*result_tuples)) {
         pfree(*result_tuples);

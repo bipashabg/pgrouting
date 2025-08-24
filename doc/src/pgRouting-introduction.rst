@@ -63,11 +63,12 @@ Contributors
 This Release Contributors
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Individuals in this release v3.8.x (in alphabetical order)
+Individuals in this release v4.0.0 (in alphabetical order)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Aurélie Bousquet,
+Fan Wu
 Regina Obe,
+Saloni kumari,
 Vicky Vergara
 
 
@@ -120,6 +121,7 @@ David Techer,
 Denis Rykov,
 Ema Miyawaki,
 Esteban Zimanyi,
+Fan Wu,
 Florian Thurkow,
 Frederic Junod,
 Gerald Fenoy,
@@ -146,6 +148,7 @@ Rajat Shinde,
 Razequl Islam,
 Regina Obe,
 Rohith Reddy,
+Saloni Kumari,
 Sarthak Agarwal,
 Shobhit Chaurasia,
 Sourabh Garg,

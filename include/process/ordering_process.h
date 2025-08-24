@@ -4,6 +4,9 @@ File: ordering_process.h
 Function's developer:
 Copyright (c) 2025 Bipasha Gayary
 Mail: bipashagayary at gmail.com
+Copyright (c) 2025 Fan Wu
+Mail: wifiblack0131 at gmail.com
+>>>>>>> upstream/develop
 
 ------
 
@@ -28,16 +31,13 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 #pragma once
 
 #ifdef __cplusplus
-#include <stdbool.h>
 #include <cstddef>
 #include <cstdint>
-#include <string>
 
 #else
 #include <stddef.h>
 #include <stdint.h>
 #endif
-
 
 #ifdef __cplusplus
 extern "C" {

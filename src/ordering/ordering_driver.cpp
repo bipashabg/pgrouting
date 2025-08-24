@@ -4,9 +4,14 @@ Generated with Template by:
 Copyright (c) 2025 pgRouting developers
 Mail: project@pgrouting.org
 
-Developer:
+Developers:
+
 Copyright (c) 2025 Bipasha Gayary
 Mail: bipashagayary at gmail.com
+
+Copyright (c) 2025 Fan Wu
+Mail: wifiblack0131 at gmail.com
+
 ------
 
 This program is free software; you can redistribute it and/or modify
@@ -39,6 +44,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 #include "cpp_common/assert.hpp"
 
 #include "ordering/sloanOrdering.hpp"
+#include "ordering/kingOrdering.hpp"
 
 namespace {
 template <class G>
@@ -65,6 +71,9 @@ do_ordering(
     using pgrouting::pgr_alloc;
     using pgrouting::to_pg_msg;
     using pgrouting::pgr_free;
+    using pgrouting::kingOrdering;
+    using pgrouting::pgget::get_edges;
+    using pgrouting::UndirectedGraph;
 
     std::ostringstream log;
     std::ostringstream err;
@@ -79,39 +88,36 @@ do_ordering(
         pgassert(*return_count == 0);
 
         hint = edges_sql;
-        auto edges = pgrouting::pgget::get_edges(std::string(edges_sql), true, true);
+        auto edges = get_edges(std::string(edges_sql), true, false);
         if (edges.empty()) {
-            throw std::string("No edges found");
+            *notice_msg = to_pg_msg("No edges found");
+            *return_tuples = nullptr;
+            *return_count = 0;
+            return;
         }
         hint = "";
 
-        log << "Processing Undirected graph\n";
-
         std::vector<int64_t> results;
 
-#if 0
-        pgrouting::UndirectedGraph undigraph;
-#else
         auto vertices(pgrouting::extract_vertices(edges));
-        pgrouting::UndirectedGraph undigraph(vertices);
-#endif
+        UndirectedGraph undigraph(vertices);
         undigraph.insert_edges(edges);
 
-        // log << undigraph;
         if (which == 0) {
-                results = sloanOrdering(undigraph);
+            results = sloanOrdering(undigraph);
+        } else if (which == 2) {
+            results = kingOrdering(undigraph);
         }
-
 
         auto count = results.size();
 
         if (count == 0) {
-                err << "No result generated \n";
-                *err_msg = to_pg_msg(err);
-                *return_tuples = NULL;
-                *return_count = 0;
-                return;
-        }
+            *notice_msg = to_pg_msg("No results found \n");
+            *err_msg = to_pg_msg(err);
+            *return_tuples = nullptr;
+            *return_count = 0;
+            return;
+	}
 
         (*return_tuples) = pgr_alloc(count, (*return_tuples));
 
