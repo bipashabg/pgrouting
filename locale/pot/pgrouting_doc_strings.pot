@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pgRouting v4.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-23 02:38+0000\n"
+"POT-Creation-Date: 2025-08-24 15:48+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3076,7 +3076,10 @@ msgstr ""
 msgid ":doc:`pgr_topologicalSort` - Linear ordering of the vertices for directed acyclic graph."
 msgstr ""
 
-msgid ":doc:`pgr_kingOrdering` - Returns the King ordering of an undirected graphs acyclic graph."
+msgid ":doc:`pgr_sloanOrdering` - Returns the sloan ordering of an undirected graph."
+msgstr ""
+
+msgid ":doc:`pgr_kingOrdering` - Returns the King ordering of an undirected graph."
 msgstr ""
 
 msgid ":doc:`metrics-family`"
@@ -7117,7 +7120,7 @@ msgstr ""
 msgid "Individuals (in alphabetical order)"
 msgstr ""
 
-msgid "Aasheesh Tiwari, Abhinav Jain, Aditya Pratap Singh, Adrien Berchet, Akio Takubo, Andrea Nardelli, Anthony Tasca, Anton Patrushev, Aryan Gupta, Ashraf Hossain, Ashish Kumar, Aurélie Bousquet, Cayetano Benavent, Christian Gonzalez, Daniel Kastl, Dapeng Wang, Dave Potts, David Techer, Denis Rykov, Ema Miyawaki, Esteban Zimanyi, Fan Wu, Florian Thurkow, Frederic Junod, Gerald Fenoy, Gudesa Venkata Sai Akhil, Hang Wu, Himanshu Raj, Imre Samu, Jay Mahadeokar, Jinfu Leng, Kai Behncke, Kishore Kumar, Ko Nagase, Mahmoud Sakr, Manikata Kondeti, Mario Basa, Martin Wiesenhaan, Maxim Dubinin, Maoguang Wang, Mohamed Bakli, Mohamed Zia, Mukul Priya, Nitish Chauhan, Rajat Shinde, Razequl Islam, Regina Obe, Rohith Reddy, Saloni Kumari, Sarthak Agarwal, Shobhit Chaurasia, Sourabh Garg, Stephen Woodbridge, Swapnil Joshi, Sylvain Housseman, Sylvain Pasche, Veenit Kumar, Vidhan Jain, Virginia Vergara, Yige Huang"
+msgid "Aasheesh Tiwari, Abhinav Jain, Aditya Pratap Singh, Adrien Berchet, Akio Takubo, Andrea Nardelli, Anthony Tasca, Anton Patrushev, Aryan Gupta, Ashraf Hossain, Ashish Kumar, Aurélie Bousquet, Bipasha Gayary, Cayetano Benavent, Christian Gonzalez, Daniel Kastl, Dapeng Wang, Dave Potts, David Techer, Denis Rykov, Ema Miyawaki, Esteban Zimanyi, Fan Wu, Florian Thurkow, Frederic Junod, Gerald Fenoy, Gudesa Venkata Sai Akhil, Hang Wu, Himanshu Raj, Imre Samu, Jay Mahadeokar, Jinfu Leng, Kai Behncke, Kishore Kumar, Ko Nagase, Mahmoud Sakr, Manikata Kondeti, Mario Basa, Martin Wiesenhaan, Maxim Dubinin, Maoguang Wang, Mohamed Bakli, Mohamed Zia, Mukul Priya, Nitish Chauhan, Rajat Shinde, Razequl Islam, Regina Obe, Rohith Reddy, Saloni Kumari, Sarthak Agarwal, Shobhit Chaurasia, Sourabh Garg, Stephen Woodbridge, Swapnil Joshi, Sylvain Housseman, Sylvain Pasche, Veenit Kumar, Vidhan Jain, Virginia Vergara, Yige Huang"
 msgstr ""
 
 msgid "Corporate Sponsors (in alphabetical order)"
@@ -12344,6 +12347,66 @@ msgid "pgr_sequentialVertexColoring(`Edges SQL`_)"
 msgstr ""
 
 msgid "`Boost: Sequential Vertex Coloring <https://www.boost.org/libs/graph/doc/sequential_vertex_coloring.html>`__"
+msgstr ""
+
+msgid "``pgr_sloanOrdering`` - Experimental"
+msgstr ""
+
+msgid "``pgr_sloanOrdering`` — Returns the sloan ordering of an undirected graph"
+msgstr ""
+
+msgid "The Sloan ordering algorithm reorders the vertices of a graph to reduce bandwidth, profile, and wavefront properties, which is particularly useful for sparse matrix computations and finite element analysis."
+msgstr ""
+
+msgid "*Finds a pseudoperipheral vertex pair to determine good starting points *Uses a priority-based algorithm that balances vertex degree and distance from the start vertex. *Aims to mininimize bandwidth (maximum difference between connected vertex indices. *The implementation is for undirected graphs *Typically produces better orderings than simple breadth-first approaches. *Run time is 0.115846 seconds."
+msgstr ""
+
+msgid "|Boost| Boost Graph inside"
+msgstr ""
+
+msgid "..rubric::Summary"
+msgstr ""
+
+msgid "pgr_sloanOrdering(`Edges SQL`_)"
+msgstr ""
+
+msgid ":Example : Sloan ordering without specifying start vertex"
+msgstr ""
+
+msgid "New sloan ordering order."
+msgstr ""
+
+msgid "Sloan ordering of Original graph from Boost example (vertices 0-9)."
+msgstr ""
+
+msgid "..graphviz::"
+msgstr ""
+
+msgid "graph G{ node[shape=circle, style=filled, fillcolor=lightblue, color=black, fontcolor=black, fontsize=12]; edge[color=black, penwidth=1.5];"
+msgstr ""
+
+msgid "0 -- 3; 0 -- 5; 1 -- 2; 1 -- 4; 1 -- 6; 1 -- 9; 2 -- 3; 2 -- 4; 3 -- 5; 3 -- 8; 4 -- 6; 5 -- 6; 5 -- 7; 6 -- 7;"
+msgstr ""
+
+msgid "{rank=same; 0; 8;} {rank=same; 3; 5; 7;} {rank=same; 2; 4; 6;} {rank=same; 1; 9;}"
+msgstr ""
+
+msgid "}"
+msgstr ""
+
+msgid "..literalinclude::sloanOrdering.queries"
+msgstr ""
+
+msgid "start-after"
+msgstr ""
+
+msgid "--q3"
+msgstr ""
+
+msgid "--q4"
+msgstr ""
+
+msgid "`Boost: Sloan Ordering <https://www.boost.org/libs/graph/doc/sloan_ordering.html>`__"
 msgstr ""
 
 msgid "``pgr_stoerWagner`` - Experimental"
